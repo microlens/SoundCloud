@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+	font-family: 'Noto Sans';
+	font-weight: bold;
+}
+
+:root {
+	--main-bg-color: #ffbf00;
+	--main-bg-color2: tomato;
+	--copy-bg-color: hsl(45, 100%, 90%);
+	--copy-color: #111;
+	--player-theme-bg-color: var(--main-bg-color);
+	--player-theme-color: var(--copy-color);
+	--player-theme-progress-bg-color: #fff;
+	--player-theme-progress-color: var(--main-bg-color2);
+	--logo-gradient: linear-gradient(rgba(155, 55, 60, 0.6), rgba(155, 55, 60, 0.9));
+}
+
+:root.variant1 {
+	--main-bg-color: tomato;
+	--main-bg-color2: rgb(122, 23, 23);
+	--copy-bg-color: #fff;
+	--copy-color: #111;
+}
+
+:root.variant2 {
+	--main-bg-color: #499b4a;
+	--main-bg-color2: #3a7c3b;
+	--copy-bg-color: #eef7ee;
+	--copy-color: #111;
+}
+
+body {
+	padding: 4rem 2rem;
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	justify-content: center;
+	background: #f9fafb;
+	color: #111827;
+}
+
+.chunk {
+	background: var(--copy-bg-color);
+	color: var(--copy-color);
+	padding: 1rem;
+}
+
+p.chunk {
+	margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #111827;
+		color: #fff;
+	}
+}

@@ -1,0 +1,51 @@
+---
+import '../styles/global.css';
+import '../styles/home.css';
+import music from '../_data/music.json';
+import MusicApp from '../components/MusicApp.svelte';
+
+let title = 'SoundCloud | Retro90s';
+---
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+	
+	<style>
+		header {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			max-width: min(100%, 68ch);
+		}
+		section {
+			padding-top: 2em;
+			line-height: 1.5;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			max-width: 70ch;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<div>
+				<h1>SoundCloud</h1>
+			</div>
+		</header>
+		<section>
+			<p class="chunk">
+				From time to time I record music with my friends. You can enjoy the latest drafts if you like.
+			</p>
+			<MusicApp playlist={music} client:load/>
+		</section>
+	</main>
+</body>
+</html>
