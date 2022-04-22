@@ -2,6 +2,8 @@
 
 SoundCloud is a website to play music. Powered by <a href="https://astro.build/">Astro</a>.
 
+## 🎶 [Goto website](https://retro90s-soundcloud.netlify.app)
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
