@@ -1,9 +1,9 @@
 {
-  "name": "@retro90s/soundcloud",
-  "description": "Retro90s SoundCloud is a website to play music",
-  "version": "1.0.0",
+  "name": "astro-musicplayer",
+  "description": "Astro MusicPlayer is a website to play music",
+  "version": "2.0.0",
   "private": true,
-  "author": "Retro90s",
+  "author": "AREA44",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",

@@ -3,42 +3,42 @@
     "audioSource": "/music/Le-Thu-Quyen_Chi-Buon-Hom-Nay.mp3",
     "title": "Chỉ Buồn Hôm Nay",
     "artists": "Lê Thu Quyên",
-    "albumCover": "/covers/Le-Thu-Quyen_Chi-Buon-Hom-Nay.png",
-    "trackCover": "/covers/Le-Thu-Quyen_Chi-Buon-Hom-Nay.png"
+    "albumCover": "/cover/Le-Thu-Quyen_Chi-Buon-Hom-Nay.png",
+    "trackCover": "/cover/Le-Thu-Quyen_Chi-Buon-Hom-Nay.png"
   },
   {
     "audioSource": "/music/Le-Thu-Quyen_The-Nights.mp3",
     "title": "The Nights",
     "artists": "Lê Thu Quyên",
-    "albumCover": "/covers/Le-Thu-Quyen_The-Nights.png",
-    "trackCover": "/covers/Le-Thu-Quyen_The-Nights.png"
+    "albumCover": "/cover/Le-Thu-Quyen_The-Nights.png",
+    "trackCover": "/cover/Le-Thu-Quyen_The-Nights.png"
   },
   {
     "audioSource": "/music/Luong-To-Uyen_Anh-Sang-Doi-Toi.mp3",
     "title": "Ánh Sáng Đời Tôi",
     "artists": "Lương Tố Uyên",
-    "albumCover": "/covers/Luong-To-Uyen_Anh-Sang-Doi-Toi.png",
-    "trackCover": "/covers/Luong-To-Uyen_Anh-Sang-Doi-Toi.png"
+    "albumCover": "/cover/Luong-To-Uyen_Anh-Sang-Doi-Toi.png",
+    "trackCover": "/cover/Luong-To-Uyen_Anh-Sang-Doi-Toi.png"
   },
   {
     "audioSource": "/music/Luu-Manh-Hiep_Nang-Tho.mp3",
     "title": "Nàng Thơ",
     "artists": "Lưu Mạnh Hiệp",
-    "albumCover": "/covers/Luu-Manh-Hiep_Nang-Tho.png",
-    "trackCover": "/covers/Luu-Manh-Hiep_Nang-Tho.png"
+    "albumCover": "/cover/Luu-Manh-Hiep_Nang-Tho.png",
+    "trackCover": "/cover/Luu-Manh-Hiep_Nang-Tho.png"
   },
   {
     "audioSource": "/music/Pham-Thi-Ngoc-Ha_Em-Met-Roi.mp3",
     "title": "Em Mệt Rồi",
     "artists": "Phạm Thị Ngọc Hà",
-    "albumCover": "/covers/Pham-Thi-Ngoc-Ha_Em-Met-Roi.png",
-    "trackCover": "/covers/Pham-Thi-Ngoc-Ha_Em-Met-Roi.png"
+    "albumCover": "/cover/Pham-Thi-Ngoc-Ha_Em-Met-Roi.png",
+    "trackCover": "/cover/Pham-Thi-Ngoc-Ha_Em-Met-Roi.png"
   },
   {
     "audioSource": "/music/Tran-Huyen-Trang_Hon-Ca-Yeu.mp3",
     "title": "Hơn Cả Yêu",
     "artists": "Trần Huyền Trang",
-    "albumCover": "/covers/Tran-Huyen-Trang_Hon-Ca-Yeu.png",
-    "trackCover": "/covers/Tran-Huyen-Trang_Hon-Ca-Yeu.png"
+    "albumCover": "/cover/Tran-Huyen-Trang_Hon-Ca-Yeu.png",
+    "trackCover": "/cover/Tran-Huyen-Trang_Hon-Ca-Yeu.png"
   }
 ]
