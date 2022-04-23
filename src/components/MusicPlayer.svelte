@@ -148,7 +148,7 @@
   }
   h2 {
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 16px;
     color: #111;
   }
   .container {
