@@ -1,154 +1,163 @@
-
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SoundCloud | Retro90s</title>
-  <meta name="author" content="Retro90s">
-  <meta name="description" content="Music from Retro90s">
+  <title>SoundCloud | Microlens</title>
+  <meta name="author" content="Microlens">
+  <meta name="description" content="Music from Microlens">
   <link rel="icon" href="static/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-    <div class="container">
-        <div id="white-player">
-          <div class="white-player-top">
-            <div>
-              &nbsp;
-            </div>
-            
-            <div class="center">
-              <span class="now-playing">Now Playing</span>
-            </div>
-            
-            <div>
-                <img src="./static/media/show-playlist.svg" class="show-playlist"/>
+  <div class="container">
+    <div id="white-player">
+      <div class="white-player-top">
+        <div>
+          &nbsp;
+        </div>
+
+        <div class="center">
+          <span class="now-playing">Now Playing</span>
+        </div>
+
+        <div>
+          <img src="./static/media/show-playlist.svg" class="show-playlist" />
+        </div>
+      </div>
+
+      <div id="white-player-center">
+        <img data-amplitude-song-info="cover_art_url" class="main-album-art" />
+
+        <div class="song-meta-data">
+          <span data-amplitude-song-info="name" class="song-name"></span>
+          <span data-amplitude-song-info="artist" class="song-artist"></span>
+        </div>
+
+        <div class="time-progress">
+          <div id="progress-container">
+            <input type="range" class="amplitude-song-slider" />
+            <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+            <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+          </div>
+
+          <div class="time-container">
+            <span class="current-time">
+              <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
+            </span>
+            <span class="duration">
+              <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="white-player-controls">
+        <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+        <div class="amplitude-prev" id="previous"></div>
+        <div class="amplitude-play-pause" id="play-pause"></div>
+        <div class="amplitude-next" id="next"></div>
+        <div class="amplitude-repeat" id="repeat"></div>
+      </div>
+
+      <div id="white-player-playlist-container">
+        <div class="white-player-playlist-top">
+          <div>
+
+          </div>
+          <div>
+            <span class="queue">Queue</span>
+          </div>
+          <div>
+            <img src="./static/media/close.svg" class="close-playlist" />
+          </div>
+        </div>
+
+        <div class="white-player-up-next">
+          Up Next
+        </div>
+
+        <div class="white-player-playlist">
+          <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause"
+            data-amplitude-song-index="0">
+            <img src="./music/cover/Le-Thu-Quyen_Chi-Buon-Hom-Nay.png" />
+            <div class="playlist-song-meta">
+              <span class="playlist-song-name">Chỉ Buồn Hôm Nay</span>
+              <span class="playlist-artist-album">Lê Thu Quyên</span>
             </div>
           </div>
 
-          <div id="white-player-center">
-            <img data-amplitude-song-info="cover_art_url" class="main-album-art"/>
+          <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause"
+            data-amplitude-song-index="1">
+            <img src="./music/cover/Le-Thu-Quyen_The-Nights.png" />
+            <div class="playlist-song-meta">
+              <span class="playlist-song-name">The Nights</span>
+              <span class="playlist-artist-album">Lê Thu Quyên</span>
+            </div>
+          </div>
 
-            <div class="song-meta-data">
+          <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause"
+            data-amplitude-song-index="2">
+            <img src="./music/cover/Luong-To-Uyen_Anh-Sang-Doi-Toi.png" />
+            <div class="playlist-song-meta">
+              <span class="playlist-song-name">Ánh Sáng Đời Tôi</span>
+              <span class="playlist-artist-album">Lương Tố Uyên</span>
+            </div>
+          </div>
+
+          <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause"
+            data-amplitude-song-index="3">
+            <img src="./music/cover/Luu-Manh-Hiep_Nang-Tho.png" />
+            <div class="playlist-song-meta">
+              <span class="playlist-song-name">Nàng Thơ</span>
+              <span class="playlist-artist-album">Lưu Mạnh Hiệp</span>
+            </div>
+          </div>
+
+          <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause"
+            data-amplitude-song-index="4">
+            <img src="./music/cover/Pham-Thi-Ngoc-Ha_Em-Met-Roi.png" />
+            <div class="playlist-song-meta">
+              <span class="playlist-song-name">Em Mệt Rồi</span>
+              <span class="playlist-artist-album">Phạm Thị Ngọc Hà</span>
+            </div>
+          </div>
+
+          <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause"
+            data-amplitude-song-index="5">
+            <img src="./music/cover/Tran-Huyen-Trang_Hon-Ca-Yeu.png" />
+            <div class="playlist-song-meta">
+              <span class="playlist-song-name">Hơn Cả Yêu</span>
+              <span class="playlist-artist-album">Trần Huyền Trang</span>
+            </div>
+          </div>
+        </div>
+        <div class="white-player-playlist-controls">
+          <img data-amplitude-song-info="cover_art_url" class="playlist-album-art" />
+
+          <div class="playlist-controls">
+            <div class="playlist-meta-data">
               <span data-amplitude-song-info="name" class="song-name"></span>
               <span data-amplitude-song-info="artist" class="song-artist"></span>
             </div>
 
-            <div class="time-progress">
-              <div id="progress-container">
-                <input type="range" class="amplitude-song-slider"/>
-                <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
-                <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
-              </div>
-
-              <div class="time-container">
-                <span class="current-time">
-                  <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
-                </span>
-                <span class="duration">
-                    <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
-                  </span>
-              </div>
+            <div class="playlist-control-wrapper">
+              <div class="amplitude-prev" id="playlist-previous"></div>
+              <div class="amplitude-play-pause" id="playlist-play-pause"></div>
+              <div class="amplitude-next" id="playlist-next"></div>
             </div>
           </div>
-
-          <div id="white-player-controls">
-            <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
-            <div class="amplitude-prev" id="previous"></div>
-            <div class="amplitude-play-pause" id="play-pause"></div>
-            <div class="amplitude-next" id="next"></div>
-            <div class="amplitude-repeat" id="repeat"></div>
-          </div>
-
-          <div id="white-player-playlist-container">
-            <div class="white-player-playlist-top">
-              <div>
-
-              </div>
-              <div>
-                <span class="queue">Queue</span>
-              </div>
-              <div>
-                  <img src="./static/media/close.svg" class="close-playlist"/>
-              </div>
-             </div>
-
-            <div class="white-player-up-next">
-              Up Next
-            </div>
-
-            <div class="white-player-playlist">
-              <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
-                <img src="./music/cover/Le-Thu-Quyen_Chi-Buon-Hom-Nay.png"/>
-                <div class="playlist-song-meta">
-                  <span class="playlist-song-name">Chỉ Buồn Hôm Nay</span>
-                  <span class="playlist-artist-album">Lê Thu Quyên</span>
-                </div>
-              </div>
-
-              <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
-                <img src="./music/cover/Le-Thu-Quyen_The-Nights.png"/>
-                <div class="playlist-song-meta">
-                  <span class="playlist-song-name">The Nights</span>
-                  <span class="playlist-artist-album">Lê Thu Quyên</span>
-                </div>
-              </div>
-
-              <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
-                <img src="./music/cover/Luong-To-Uyen_Anh-Sang-Doi-Toi.png"/>
-                <div class="playlist-song-meta">
-                  <span class="playlist-song-name">Ánh Sáng Đời Tôi</span>
-                  <span class="playlist-artist-album">Lương Tố Uyên</span>
-                </div>
-              </div>
-
-              <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
-                <img src="./music/cover/Luu-Manh-Hiep_Nang-Tho.png"/>
-                <div class="playlist-song-meta">
-                  <span class="playlist-song-name">Nàng Thơ</span>
-                  <span class="playlist-artist-album">Lưu Mạnh Hiệp</span>
-                </div>
-              </div>
-
-              <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
-                <img src="./music/cover/Pham-Thi-Ngoc-Ha_Em-Met-Roi.png"/>
-                <div class="playlist-song-meta">
-                  <span class="playlist-song-name">Em Mệt Rồi</span>
-                  <span class="playlist-artist-album">Phạm Thị Ngọc Hà</span>
-                </div>
-              </div>
-
-              <div class="white-player-playlist-song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
-                <img src="./music/cover/Tran-Huyen-Trang_Hon-Ca-Yeu.png"/>
-                <div class="playlist-song-meta">
-                  <span class="playlist-song-name">Hơn Cả Yêu</span>
-                  <span class="playlist-artist-album">Trần Huyền Trang</span>
-                </div>
-              </div>
-          </div>
-          <div class="white-player-playlist-controls">
-              <img data-amplitude-song-info="cover_art_url" class="playlist-album-art"/>
-
-              <div class="playlist-controls">
-                <div class="playlist-meta-data">
-                    <span data-amplitude-song-info="name" class="song-name"></span>
-                    <span data-amplitude-song-info="artist" class="song-artist"></span>
-                </div>
-
-                <div class="playlist-control-wrapper">
-                  <div class="amplitude-prev" id="playlist-previous"></div>
-                  <div class="amplitude-play-pause" id="playlist-play-pause"></div>
-                  <div class="amplitude-next" id="playlist-next"></div>
-                </div>
-              </div>
-            </div>
         </div>
       </div>
-  <script src='./static/javascript/amplitude.min.js'>
-  </script><script  src="./script.js"></script>
+    </div>
+    <script src='./static/javascript/amplitude.min.js'>
+    </script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
