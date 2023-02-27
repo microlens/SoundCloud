@@ -2,7 +2,7 @@
 
 SoundCloud is a website to play music.
 
-## 🎶 [Goto website](https://microlens-soundcloud.netlify.app)
+## 🎶 [Goto website](https://microlens.github.io/SoundCloud)
 
 ## Sources
 
